@@ -11,7 +11,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000', // Allow your frontend
+    origin: 'https://chat-frontend1.vercel.app/', // Allow your frontend
   }));
 
 

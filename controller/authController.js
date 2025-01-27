@@ -115,7 +115,7 @@ exports.addUser = async (req, res) => {
 
   try {
     // Validate the email domain
-    if (!email.endsWith('@valuebound.com')) {
+    if (!email.endsWith('@gmail.com.com')) {
       return res.status(400).json({ message: 'Email must end with @valuebound.com' });
     }
 
@@ -195,7 +195,7 @@ const saveUsersFromData = async (data, res) => {
       }
 
       // Validate the email domain
-      if (!email.endsWith('@valuebound.com')) {
+      if (!email.endsWith('@gmail.com')) {
         console.log(`Skipping user with invalid email domain: ${email}`);
         continue; // Skip users with invalid email domains
       }

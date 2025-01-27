@@ -28,10 +28,10 @@ router.get('/google/callback',
   (req, res) => {
     try {
       const token = generateToken(req.user._id);
-      res.redirect(`http://localhost:3000/success?token=${token}`);
+      res.redirect(`https://chat-frontend1.vercel.app/success?token=${token}`);
     } catch (error) {
       console.error('Error during Google OAuth callback:', error);
-      res.redirect('http://localhost:3000/error');
+      res.redirect('https://chat-frontend1.vercel.app/error');
     }
   }
 );

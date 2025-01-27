@@ -13,7 +13,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: 'http://localhost:3000/auth/google/callback', // The callback route for OAuth
+      callbackURL: 'https://chat-frontend1.vercel.app/auth/google/callback', // The callback route for OAuth
     },
     async (accessToken, refreshToken, profile, done) => {
       try {
